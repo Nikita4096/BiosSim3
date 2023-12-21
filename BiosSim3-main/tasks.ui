@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Tasks</class>
+ <widget class="QWidget" name="Tasks">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>606</width>
+    <height>398</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QListWidget" name="listWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>421</width>
+     <height>331</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Розігнати процесор в 2 рази</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Змінити адресу SerialPort1 на 2F8/IRQ3</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Змінити адресу SerialPort2 на 3F8/IRQ4</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Вимкнути мікрофон</string>
+    </property>
+    <property name="font">
+     <font>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Увімкнути швидке завантаження</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Відключити підтримку USB</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Включити підтримку бездротового з'єднання</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Вимкнути віртуалізацію</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Змінити графічну відеокарту на внутрішню, виділити 1024МБ відеопам'яті</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Поставити С-стан у С1</string>
+    </property>
+   </item>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>listWidget</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
