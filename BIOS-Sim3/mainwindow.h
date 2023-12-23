@@ -25,14 +25,18 @@ protected:
         if(ui->stackedWidget->isEnabled() && !disableMovement)
         {
         switch (event->key()) {
-        case Qt::Key_Left:
-            ui->stackedWidget->setCurrentIndex((ui->stackedWidget->currentIndex() - 1 + ui->stackedWidget->count()) % ui->stackedWidget->count());
-
-            break;
-        case Qt::Key_Right:
-            ui->stackedWidget->setCurrentIndex((ui->stackedWidget->currentIndex() + 1) % ui->stackedWidget->count());
-            //qDebug() <<"a";
-            break;
+            case Qt::Key_Left:
+                ui->stackedWidget->setCurrentIndex((ui->stackedWidget->currentIndex() - 1 + ui->stackedWidget->count()) % ui->stackedWidget->count());
+                ui->tableWidget_14->setCurrentCell(0, ui->stackedWidget->currentIndex());
+                qDebug()<<ui->stackedWidget->currentIndex();
+                ui->tableWidget_14->repaint();
+                break;
+            case Qt::Key_Right:
+                ui->stackedWidget->setCurrentIndex((ui->stackedWidget->currentIndex() + 1) % ui->stackedWidget->count());
+                ui->tableWidget_14->setCurrentCell(0, ui->stackedWidget->currentIndex());
+                qDebug()<<ui->stackedWidget->currentIndex();
+                ui->tableWidget_14->repaint();
+                break;
         case Qt::Key_Escape:
             ui->Pages->hide();
             ui->stackedWidget->show();

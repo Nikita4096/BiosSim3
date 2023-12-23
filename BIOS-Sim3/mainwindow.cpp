@@ -89,11 +89,11 @@ MainWindow::MainWindow(QWidget *parent)
         break;
     }
 */
-    ui->tableWidget_10->setCurrentCell(0, 0);
-    ui->tableWidget_11->setCurrentCell(0, 1);
-    ui->tableWidget_12->setCurrentCell(0, 2);
-    ui->tableWidget_13->setCurrentCell(0, 3);
-    ui->tableWidget_14->setCurrentCell(0, 4);
+   // ui->tableWidget_10->setCurrentCell(0, 0);
+    //ui->tableWidget_11->setCurrentCell(0, 1);
+    //ui->tableWidget_12->setCurrentCell(0, 2);
+    //ui->tableWidget_13->setCurrentCell(0, 3);
+    //ui->tableWidget_14->setCurrentCell(0, 4);
 }
 
 MainWindow::~MainWindow()

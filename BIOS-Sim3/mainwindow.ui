@@ -14,14 +14,17 @@
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(0, 120, 215);</string>
+   <string notr="true"/>
   </property>
   <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 120, 215);</string>
+   </property>
    <widget class="QStackedWidget" name="stackedWidget">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>10</y>
+      <x>50</x>
+      <y>60</y>
       <width>701</width>
       <height>421</height>
      </rect>
@@ -30,7 +33,7 @@
      <string notr="true">background-color: rgb(0, 120, 215);</string>
     </property>
     <property name="currentIndex">
-     <number>4</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="page_1">
      <widget class="QTableWidget" name="tableWidget">
@@ -109,102 +112,6 @@ outline: none;
        </property>
       </item>
      </widget>
-     <widget class="QTableWidget" name="tableWidget_10">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>10</y>
-        <width>531</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">selection-background-color: rgb(0, 85, 127);
-gridline-color: rgb(255, 255, 255, 0);
-background-color: rgb(0, 120, 215);
-outline: none;
-	</string>
-      </property>
-      <property name="inputMethodHints">
-       <set>Qt::ImhNone</set>
-      </property>
-      <property name="editTriggers">
-       <set>QAbstractItemView::NoEditTriggers</set>
-      </property>
-      <property name="tabKeyNavigation">
-       <bool>false</bool>
-      </property>
-      <property name="selectionMode">
-       <enum>QAbstractItemView::SingleSelection</enum>
-      </property>
-      <property name="showGrid">
-       <bool>false</bool>
-      </property>
-      <property name="wordWrap">
-       <bool>true</bool>
-      </property>
-      <attribute name="horizontalHeaderVisible">
-       <bool>false</bool>
-      </attribute>
-      <attribute name="verticalHeaderVisible">
-       <bool>false</bool>
-      </attribute>
-      <row>
-       <property name="text">
-        <string>New Row</string>
-       </property>
-      </row>
-      <column>
-       <property name="text">
-        <string>New Column</string>
-       </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>New Column</string>
-       </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>New Column</string>
-       </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>New Column</string>
-       </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>New Column</string>
-       </property>
-      </column>
-      <item row="0" column="0">
-       <property name="text">
-        <string>Main</string>
-       </property>
-      </item>
-      <item row="0" column="1">
-       <property name="text">
-        <string>Devices</string>
-       </property>
-      </item>
-      <item row="0" column="2">
-       <property name="text">
-        <string>Advanced</string>
-       </property>
-      </item>
-      <item row="0" column="3">
-       <property name="text">
-        <string>Startup</string>
-       </property>
-      </item>
-      <item row="0" column="4">
-       <property name="text">
-        <string>Exit</string>
-       </property>
-      </item>
-     </widget>
     </widget>
     <widget class="QWidget" name="page_6">
      <widget class="QTableWidget" name="tableWidget_6">
@@ -273,102 +180,6 @@ outline: none;
       <item row="1" column="0">
        <property name="text">
         <string>Intel(R) Software Guard Extensions</string>
-       </property>
-      </item>
-     </widget>
-     <widget class="QTableWidget" name="tableWidget_11">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>10</y>
-        <width>531</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">selection-background-color: rgb(0, 85, 127);
-gridline-color: rgb(255, 255, 255, 0);
-background-color: rgb(0, 120, 215);
-outline: none;
-	</string>
-      </property>
-      <property name="inputMethodHints">
-       <set>Qt::ImhNone</set>
-      </property>
-      <property name="editTriggers">
-       <set>QAbstractItemView::NoEditTriggers</set>
-      </property>
-      <property name="tabKeyNavigation">
-       <bool>false</bool>
-      </property>
-      <property name="selectionMode">
-       <enum>QAbstractItemView::SingleSelection</enum>
-      </property>
-      <property name="showGrid">
-       <bool>false</bool>
-      </property>
-      <property name="wordWrap">
-       <bool>true</bool>
-      </property>
-      <attribute name="horizontalHeaderVisible">
-       <bool>false</bool>
-      </attribute>
-      <attribute name="verticalHeaderVisible">
-       <bool>false</bool>
-      </attribute>
-      <row>
-       <property name="text">
-        <string>New Row</string>
-       </property>
-      </row>
-      <column>
-       <property name="text">
-        <string>New Column</string>
-       </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>New Column</string>
-       </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>New Column</string>
-       </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>New Column</string>
-       </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>New Column</string>
-       </property>
-      </column>
-      <item row="0" column="0">
-       <property name="text">
-        <string>Main</string>
-       </property>
-      </item>
-      <item row="0" column="1">
-       <property name="text">
-        <string>Devices</string>
-       </property>
-      </item>
-      <item row="0" column="2">
-       <property name="text">
-        <string>Advanced</string>
-       </property>
-      </item>
-      <item row="0" column="3">
-       <property name="text">
-        <string>Startup</string>
-       </property>
-      </item>
-      <item row="0" column="4">
-       <property name="text">
-        <string>Exit</string>
        </property>
       </item>
      </widget>
@@ -526,102 +337,6 @@ outline: none;
       <item row="9" column="0">
        <property name="text">
         <string>Bluetooth [Enabled]</string>
-       </property>
-      </item>
-     </widget>
-     <widget class="QTableWidget" name="tableWidget_12">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>10</y>
-        <width>531</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">selection-background-color: rgb(0, 85, 127);
-gridline-color: rgb(255, 255, 255, 0);
-background-color: rgb(0, 120, 215);
-outline: none;
-	</string>
-      </property>
-      <property name="inputMethodHints">
-       <set>Qt::ImhNone</set>
-      </property>
-      <property name="editTriggers">
-       <set>QAbstractItemView::NoEditTriggers</set>
-      </property>
-      <property name="tabKeyNavigation">
-       <bool>false</bool>
-      </property>
-      <property name="selectionMode">
-       <enum>QAbstractItemView::SingleSelection</enum>
-      </property>
-      <property name="showGrid">
-       <bool>false</bool>
-      </property>
-      <property name="wordWrap">
-       <bool>true</bool>
-      </property>
-      <attribute name="horizontalHeaderVisible">
-       <bool>false</bool>
-      </attribute>
-      <attribute name="verticalHeaderVisible">
-       <bool>false</bool>
-      </attribute>
-      <row>
-       <property name="text">
-        <string>New Row</string>
-       </property>
-      </row>
-      <column>
-       <property name="text">
-        <string>New Column</string>
-       </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>New Column</string>
-       </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>New Column</string>
-       </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>New Column</string>
-       </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>New Column</string>
-       </property>
-      </column>
-      <item row="0" column="0">
-       <property name="text">
-        <string>Main</string>
-       </property>
-      </item>
-      <item row="0" column="1">
-       <property name="text">
-        <string>Devices</string>
-       </property>
-      </item>
-      <item row="0" column="2">
-       <property name="text">
-        <string>Advanced</string>
-       </property>
-      </item>
-      <item row="0" column="3">
-       <property name="text">
-        <string>Startup</string>
-       </property>
-      </item>
-      <item row="0" column="4">
-       <property name="text">
-        <string>Exit</string>
        </property>
       </item>
      </widget>
@@ -835,102 +550,6 @@ outline: 0;
       </widget>
       <widget class="QWidget" name="page_8"/>
      </widget>
-     <widget class="QTableWidget" name="tableWidget_13">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>10</y>
-        <width>531</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">selection-background-color: rgb(0, 85, 127);
-gridline-color: rgb(255, 255, 255, 0);
-background-color: rgb(0, 120, 215);
-outline: none;
-	</string>
-      </property>
-      <property name="inputMethodHints">
-       <set>Qt::ImhNone</set>
-      </property>
-      <property name="editTriggers">
-       <set>QAbstractItemView::NoEditTriggers</set>
-      </property>
-      <property name="tabKeyNavigation">
-       <bool>false</bool>
-      </property>
-      <property name="selectionMode">
-       <enum>QAbstractItemView::SingleSelection</enum>
-      </property>
-      <property name="showGrid">
-       <bool>false</bool>
-      </property>
-      <property name="wordWrap">
-       <bool>true</bool>
-      </property>
-      <attribute name="horizontalHeaderVisible">
-       <bool>false</bool>
-      </attribute>
-      <attribute name="verticalHeaderVisible">
-       <bool>false</bool>
-      </attribute>
-      <row>
-       <property name="text">
-        <string>New Row</string>
-       </property>
-      </row>
-      <column>
-       <property name="text">
-        <string>New Column</string>
-       </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>New Column</string>
-       </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>New Column</string>
-       </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>New Column</string>
-       </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>New Column</string>
-       </property>
-      </column>
-      <item row="0" column="0">
-       <property name="text">
-        <string>Main</string>
-       </property>
-      </item>
-      <item row="0" column="1">
-       <property name="text">
-        <string>Devices</string>
-       </property>
-      </item>
-      <item row="0" column="2">
-       <property name="text">
-        <string>Advanced</string>
-       </property>
-      </item>
-      <item row="0" column="3">
-       <property name="text">
-        <string>Startup</string>
-       </property>
-      </item>
-      <item row="0" column="4">
-       <property name="text">
-        <string>Exit</string>
-       </property>
-      </item>
-     </widget>
     </widget>
     <widget class="QWidget" name="page_5">
      <widget class="QTableWidget" name="tableWidget_4">
@@ -1043,110 +662,14 @@ outline: none;
        </property>
       </item>
      </widget>
-     <widget class="QTableWidget" name="tableWidget_14">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>10</y>
-        <width>531</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">selection-background-color: rgb(0, 85, 127);
-gridline-color: rgb(255, 255, 255, 0);
-background-color: rgb(0, 120, 215);
-outline: none;
-	</string>
-      </property>
-      <property name="inputMethodHints">
-       <set>Qt::ImhNone</set>
-      </property>
-      <property name="editTriggers">
-       <set>QAbstractItemView::NoEditTriggers</set>
-      </property>
-      <property name="tabKeyNavigation">
-       <bool>false</bool>
-      </property>
-      <property name="selectionMode">
-       <enum>QAbstractItemView::SingleSelection</enum>
-      </property>
-      <property name="showGrid">
-       <bool>false</bool>
-      </property>
-      <property name="wordWrap">
-       <bool>true</bool>
-      </property>
-      <attribute name="horizontalHeaderVisible">
-       <bool>false</bool>
-      </attribute>
-      <attribute name="verticalHeaderVisible">
-       <bool>false</bool>
-      </attribute>
-      <row>
-       <property name="text">
-        <string>New Row</string>
-       </property>
-      </row>
-      <column>
-       <property name="text">
-        <string>New Column</string>
-       </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>New Column</string>
-       </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>New Column</string>
-       </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>New Column</string>
-       </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>New Column</string>
-       </property>
-      </column>
-      <item row="0" column="0">
-       <property name="text">
-        <string>Main</string>
-       </property>
-      </item>
-      <item row="0" column="1">
-       <property name="text">
-        <string>Devices</string>
-       </property>
-      </item>
-      <item row="0" column="2">
-       <property name="text">
-        <string>Advanced</string>
-       </property>
-      </item>
-      <item row="0" column="3">
-       <property name="text">
-        <string>Startup</string>
-       </property>
-      </item>
-      <item row="0" column="4">
-       <property name="text">
-        <string>Exit</string>
-       </property>
-      </item>
-     </widget>
     </widget>
    </widget>
    <widget class="QStackedWidget" name="Pages">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>20</y>
-      <width>921</width>
+      <x>20</x>
+      <y>70</y>
+      <width>781</width>
       <height>431</height>
      </rect>
     </property>
@@ -1157,7 +680,7 @@ gridline-color: rgb(255, 255, 255, 0);
 outline: none;</string>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="summary">
      <property name="styleSheet">
@@ -2072,8 +1595,8 @@ outline: 0;
    <widget class="QWidget" name="widget" native="true">
     <property name="geometry">
      <rect>
-      <x>740</x>
-      <y>470</y>
+      <x>810</x>
+      <y>60</y>
       <width>501</width>
       <height>236</height>
      </rect>
@@ -2222,9 +1745,106 @@ outline: 0;
      </property>
     </widget>
    </widget>
+   <widget class="QTableWidget" name="tableWidget_14">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>20</y>
+      <width>531</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">selection-background-color: rgb(0, 85, 127);
+gridline-color: rgb(255, 255, 255, 0);
+background-color: rgb(0, 120, 215);
+outline: none;
+	</string>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhNone</set>
+    </property>
+    <property name="editTriggers">
+     <set>QAbstractItemView::NoEditTriggers</set>
+    </property>
+    <property name="tabKeyNavigation">
+     <bool>false</bool>
+    </property>
+    <property name="selectionMode">
+     <enum>QAbstractItemView::SingleSelection</enum>
+    </property>
+    <property name="showGrid">
+     <bool>false</bool>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+    <attribute name="horizontalHeaderVisible">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="verticalHeaderVisible">
+     <bool>false</bool>
+    </attribute>
+    <row>
+     <property name="text">
+      <string>New Row</string>
+     </property>
+    </row>
+    <column>
+     <property name="text">
+      <string>New Column</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>New Column</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>New Column</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>New Column</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>New Column</string>
+     </property>
+    </column>
+    <item row="0" column="0">
+     <property name="text">
+      <string>Main</string>
+     </property>
+    </item>
+    <item row="0" column="1">
+     <property name="text">
+      <string>Devices</string>
+     </property>
+    </item>
+    <item row="0" column="2">
+     <property name="text">
+      <string>Advanced</string>
+     </property>
+    </item>
+    <item row="0" column="3">
+     <property name="text">
+      <string>Startup</string>
+     </property>
+    </item>
+    <item row="0" column="4">
+     <property name="text">
+      <string>Exit</string>
+     </property>
+    </item>
+   </widget>
    <zorder>widget</zorder>
    <zorder>Pages</zorder>
    <zorder>stackedWidget</zorder>
+   <zorder>tableWidget_14</zorder>
   </widget>
  </widget>
  <resources/>

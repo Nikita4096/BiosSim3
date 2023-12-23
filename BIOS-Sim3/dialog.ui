@@ -39,7 +39,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>Виконано правильно завдань - 6/10</string>
+    <string>Виконано правильно завдань - 4/10</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_2">
@@ -52,7 +52,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>Оцінка - 7</string>
+    <string>Оцінка - 5</string>
    </property>
   </widget>
  </widget>
