@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Pages</class>
+ <widget class="QStackedWidget" name="Pages">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>791</width>
+    <height>579</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>StackedWidget</string>
+  </property>
+  <property name="currentIndex">
+   <number>0</number>
+  </property>
+  <widget class="QWidget" name="page">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>10</y>
+      <width>381</width>
+      <height>521</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>CPU Type
+
+CPU Speed
+
+CPU Core Count
+
+Installed Memory
+
+Memory Bus Speed
+
+Active Video
+
+Onboard Audio
+
+Onboard Ethernet
+
+CPU Fan
+
+System Fan
+
+Aux Fan
+
+Aux Fan 2
+
+M.2 Drive 1
+
+SATA Drive 1
+
+SATA Drive 2
+
+SATA Drive 3
+
+Intel(R) Core(TM) xxxx CPU @ xx0GHz
+
+xx0GHz
+
+x
+
+xxxx MB
+
+XX MHz
+
+IGD/PEG
+
+Enabled
+
+Enabled
+
+Operating
+
+Operating
+
+Operating
+
+Operating
+
+None
+
+None
+
+None
+
+None</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="page_2"/>
+  <widget class="QWidget" name="page_3"/>
+  <widget class="QWidget" name="page_4"/>
+  <widget class="QWidget" name="page_5"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
