@@ -8,6 +8,18 @@ Dialog::Dialog(QWidget *parent) :
     ui(new Ui::Dialog)
 {
     ui->setupUi(this);
+
+    labels[0] = ui->label_3;
+    labels[1] = ui->label_4;
+    labels[2] = ui->label_5;
+    labels[3] = ui->label_6;
+    labels[4] = ui->label_7;
+    labels[5] = ui->label_8;
+    labels[6] = ui->label_9;
+    labels[7] = ui->label_10;
+    labels[8] = ui->label_11;
+    labels[9] = ui->label_12;
+    labels[10] = ui->label_13;
     //if()
     //QString str123 =QString ("Виконано правильно завдань - 4/10");//.arg(grade);
     //QString str234 = QString::number(5/12);
@@ -42,6 +54,14 @@ void Dialog::receiveData(const QString data)
     {
         ui->label->setText(str123);
         ui->label_2->setText(str234);
+    }
+    for(int i=0; i<d.length(); i++)
+    {
+        // if (labels[i] != nullptr)
+
+        labels[i]->setText(QString::fromUtf8(texts.at(QChar(d.at(i)))));///setText("АА");
+        // qDebug()<<QString::fromUtf8(texts.at(buffer.at(i)));
+        //index.at( QChar(buffer.at(i)) ) = i;
     }
 
 }
@@ -87,6 +107,8 @@ void Dialog::on_pushButton_clicked()
 
             case ('p' + 0):{ qDebug()<<texts.at('p');break; }
             case ('q' + 0):{ qDebug()<<texts.at('q');break; }
+
+
 
 
 

@@ -24,6 +24,7 @@ MainWindow::MainWindow(QWidget *parent)
 {
     setlocale(LC_ALL, "Russian");
     MainWindow::connect(this, SIGNAL(sendData(const QString)), dialog, SLOT(receiveData(const QString)));
+    dialog->setWindowTitle("Grade");
     ui->setupUi(this);
 
     //this->setStyleSheet("QWidget{font-size:20px;}");
@@ -423,7 +424,11 @@ void MainWindow::on_address_2_cellActivated(int row, int column)
 
 
 
- ui->label_3->setStyleSheet("text-decoration: line-through");
+        try {
+            labels[index.at('b')]->setStyleSheet("text-decoration: line-through");
+        } catch (...) {
+
+        }
 }
 
 
@@ -484,7 +489,11 @@ void MainWindow::on_onOff_cellActivated(int row, int column/*, QString text, QLa
                 temp.remove('c');
 
     }
- ui->label_4->setStyleSheet("text-decoration: line-through");
+    try {
+                labels[index.at('c')]->setStyleSheet("text-decoration: line-through");
+    } catch (...) {
+
+    }
     ui->stackedWidget_6->hide();
     ui->tableWidget_7->setFocus();
     ui->tableWidget_7->setCurrentCell(2, 0);
@@ -500,8 +509,8 @@ void MainWindow::on_onOff_7_cellActivated(int row, int column)
                 QString str5 =QString ("Internal Speaker  [Enabled]");
                 QTableWidgetItem *ad2 = new QTableWidgetItem(str5);
                 ui->tableWidget_7->setItem(1, 0, ad2); //wrong
-                if(buffer.contains('q') && !temp.contains('q'))
-            temp.append('q');
+                if(buffer.contains('p') && !temp.contains('p'))
+            temp.append('p');
     }
     if(row ==1)
     {
@@ -513,10 +522,14 @@ void MainWindow::on_onOff_7_cellActivated(int row, int column)
                 //qDebug() <<"Yes";
                 //adr1ch = true;
 
-                temp.remove('q');
+                temp.remove('p');
 
     }
-   ui->label_4->setStyleSheet("text-decoration: line-through");
+    try {
+                labels[index.at('p')]->setStyleSheet("text-decoration: line-through");
+    } catch (...) {
+
+    }
     ui->stackedWidget_6->hide();
     ui->tableWidget_7->setFocus();
     ui->tableWidget_7->setCurrentCell(1, 0);
@@ -560,7 +573,11 @@ void MainWindow::on_onOff_2_cellActivated(int row, int column)
                 temp.append('d');
     }
     disableMovement = false;
- ui->label_5->setStyleSheet("text-decoration: line-through");
+    try {
+        labels[index.at('d')]->setStyleSheet("text-decoration: line-through");
+    } catch (...) {
+
+    }
     ui->stackedWidget_2->hide();
 
     ui->tableWidget_3->setFocus();
@@ -614,7 +631,11 @@ void MainWindow::on_onOff_3_cellActivated(int row, int column)
         rowhidden_usb = true;
     }
     //disableMovement = false;
- ui->label_6->setStyleSheet("text-decoration: line-through");
+    try {
+        labels[index.at('e')]->setStyleSheet("text-decoration: line-through");
+    } catch (...) {
+
+    }
     ui->stackedWidget_3->hide();
     ui->tableWidget_8->setFocus();
     ui->tableWidget_8->setCurrentCell(0, 0);
@@ -627,7 +648,7 @@ void MainWindow::on_tableWidget_4_cellActivated(int row, int column)
 { noE+=column;
     if(row ==0 )
     {
-
+        dialog->setWindowModality(Qt::WindowModal);
         dialog->show();
        // std::call_once ( onceFlagt, [ this]{ grade = grade+1; } );
         emit sendData(temp);
@@ -695,7 +716,11 @@ void MainWindow::on_cselect_cellActivated(int row, int column)
     ui->tableWidget_9->setItem(6, 0, ad1);
     ui->tableWidget_9->setFocus();
     ui->tableWidget_9->setCurrentCell(0, 0);
- ui->label_10->setStyleSheet("text-decoration: line-through");
+    try {
+        labels[index.at('f')]->setStyleSheet("text-decoration: line-through");
+    } catch (...) {
+
+    }
     if(value3 != QString::fromStdString("C1"))
     {
         std::call_once ( F9, [ this]{ grade = grade+1; } );
@@ -718,15 +743,22 @@ void MainWindow::on_onOff_4_cellActivated(int row, int column)
         QString str5 =QString ("Bluetooth  [Enabled]");
         QTableWidgetItem *ad2 = new QTableWidgetItem(str5); //wrong
         ui->tableWidget_2->setItem(9, 0, ad2);
+        if(buffer.contains('k') && !temp.contains('k'))
+            temp.append('k');
     }
     if(row ==1)
     {
         QString str6 =QString ("Bluetooth  [Disabled]");
         QTableWidgetItem *ad = new QTableWidgetItem(str6); // right
         ui->tableWidget_2->setItem(9, 0, ad);
+        temp.remove('k');
     }
     disableMovement = false;
-   ui->label_5->setStyleSheet("text-decoration: line-through");
+    try {
+        labels[index.at('k')]->setStyleSheet("text-decoration: line-through");
+    } catch (...) {
+
+    }
     ui->onOff_4->hide();
 
     ui->tableWidget_2->setFocus();
@@ -749,7 +781,11 @@ void MainWindow::on_clock_cellActivated(int row, int column)
     ui->tableWidget_9->setItem(8, 0, ad1);
     ui->tableWidget_9->setFocus();
     ui->tableWidget_9->setCurrentCell(0, 0);
- ui->label_11->setStyleSheet("text-decoration: line-through");
+    try {
+        labels[index.at('g')]->setStyleSheet("text-decoration: line-through");
+    } catch (...) {
+
+    }
     if(value4 != QString::fromStdString("x12"))
     {
         std::call_once ( F10, [ this]{ grade = grade+1; } );
@@ -758,7 +794,7 @@ void MainWindow::on_clock_cellActivated(int row, int column)
         if(buffer.contains('g') && !temp.contains('g'))
             temp.append('g');
     }
-    else buffer.remove('g');
+    else temp.remove('g');
     //third_layer = false;
     third_layer = false;
 }
@@ -809,7 +845,11 @@ void MainWindow::on_alloc_cellActivated(int row, int column)
     ui->tableWidget_10->setItem(0, 0, ad1);
     ui->tableWidget_10->setFocus();
     ui->tableWidget_10->setCurrentCell(0, 0);
- ui->label_9->setStyleSheet("text-decoration: line-through");
+    try {
+        labels[index.at('h')]->setStyleSheet("text-decoration: line-through");
+    } catch (...) {
+
+    }
     third_layer = false;
 }
 
@@ -827,7 +867,7 @@ void MainWindow::on_graphicsource_cellActivated(int row, int column)
     ui->tableWidget_10->setItem(1, 0, ad1);
     ui->tableWidget_10->setFocus();
     ui->tableWidget_10->setCurrentCell(0, 0);
- ui->label_9->setStyleSheet("text-decoration: line-through");
+ //ui->label_9->setStyleSheet("text-decoration: line-through");
     if(a->text() != QString::fromStdString("1024 MB"))
     {
         std::call_once ( F8, [ this]{ grade = grade+1; } );
@@ -862,7 +902,11 @@ void MainWindow::on_onOff_5_cellActivated(int row, int column)
      //   std::call_once ( onceFlag, [ ]{ ++grade; } );
     }
     //disableMovement = false;
-ui->label_7->setStyleSheet("text-decoration: line-through");
+    try {
+        labels[index.at('i')]->setStyleSheet("text-decoration: line-through");
+    } catch (...) {
+
+    }
     ui->stackedWidget_4->hide();
 
     ui->tableWidget_9->setFocus();
@@ -896,12 +940,22 @@ void MainWindow::on_onOff_6_cellActivated(int row, int column)
             QString str5 =QString ("Onboard Ethernet Controller  [Enabled]");
             QTableWidgetItem *ad2 = new QTableWidgetItem(str5);
             ui->tableWidget_11->setItem(0, 0, ad2);
+            if(buffer.contains('l') && !temp.contains('l'))
+                temp.append('l');
         }
         if(row ==1)
         {
             QString str6 =QString ("Onboard Ethernet Controller  [Disabled]");
             QTableWidgetItem *ad = new QTableWidgetItem(str6);
             ui->tableWidget_11->setItem(0, 0, ad);
+
+                temp.remove('l');
+
+        }
+        try {
+            labels[index.at('l')]->setStyleSheet("text-decoration: line-through");
+        } catch (...) {
+
         }
     }
     if(onOff_6_i == 1)
@@ -911,8 +965,8 @@ void MainWindow::on_onOff_6_cellActivated(int row, int column)
             QString str5 =QString ("Wireless LAN Access  [Enabled]");
             QTableWidgetItem *ad2 = new QTableWidgetItem(str5);
             ui->tableWidget_11->setItem(1, 0, ad2);
-            if(buffer.contains('j') && !temp.contains('j'))
-                temp.append('j');
+
+            temp.remove('j');
             std::call_once ( F6, [this]{ grade = grade+1; } );
         }
         if(row ==1)
@@ -920,12 +974,17 @@ void MainWindow::on_onOff_6_cellActivated(int row, int column)
             QString str6 =QString ("Wireless LAN Access  [Disabled]");
             QTableWidgetItem *ad = new QTableWidgetItem(str6);
             ui->tableWidget_11->setItem(1, 0, ad);
-            temp.remove('j');
+            if(buffer.contains('j') && !temp.contains('j'))
+                temp.append('j');
         }
-     ui->label_8->setStyleSheet("text-decoration: line-through");
+        try {
+            labels[index.at('j')]->setStyleSheet("text-decoration: line-through");
+        } catch (...) {
+
+        }
     }
     //disableMovement = false;
-   ui->label_5->setStyleSheet("text-decoration: line-through");
+
     ui->onOff_6->hide();
 
     ui->tableWidget_11->setFocus();

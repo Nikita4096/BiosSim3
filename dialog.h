@@ -1,6 +1,7 @@
 #ifndef DIALOG_H
 #define DIALOG_H
 
+#include <QLabel>
 #include <qabstractbutton>
 #include <QDialog>
 
@@ -29,6 +30,7 @@ public slots:
 private:
     Ui::Dialog *ui;
     int a;
+    QLabel *labels[11];
     QString d;
     std::unordered_map<QChar, std::string> texts
         {
@@ -61,7 +63,9 @@ private:
             {"z", nullptr},*/
 
 
+
         };
+
     /*ui->label_2->setText("a");
         ui->label_3->setText("a");
         ui->label_4->setText("a");

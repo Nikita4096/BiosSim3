@@ -224,7 +224,7 @@ public:
         srand(time(0));
         QSet<QChar> charSet;
         while (charSet.size() < 10) {
-            charSet.insert(QChar('a' + rand() % 17));
+            charSet.insert(QChar('a' + rand() % 16));
         }
         QList<QChar> charList(charSet.begin(), charSet.end());
         QString result;
@@ -258,8 +258,8 @@ public:
             {'m', "Увімкнути Turbo режим"},
             {'n', "Вимкнути мультипоточність "},
             {'o', "Вимкнути підтримку C1E"},
-            {'p', "Перевести режим завантаження в USB"},
-            {'q', "Вимкнути динамік"}//d
+            {'p', "Вимкнути динамік"},
+            //{'q', ""}//d
             /*{"r", nullptr},
             {"s", nullptr},
             {"t", nullptr},
